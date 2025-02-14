@@ -1,0 +1,191 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+	
+	font-family: Delicious Handrawn,Metal Mania, Impact, sans-serif;
+	
+}
+
+
+#container {
+	
+}
+
+
+header h1 {
+	font-size:8vw;
+}
+
+header,footer {
+	background:black;
+	color:white;
+	padding:1em;
+}
+
+nav {
+	padding:10px;
+}
+
+
+nav ul {
+	list-style:none;
+	padding-left:0px;
+
+}
+
+nav li {
+/*	flex: 1 1 175px;*/
+/*Cant figure out how to make the nav ul and nav li flex options look good, so I abandoned them*/
+}
+
+nav a {
+		display:block;
+		text-decoration:none;
+		text-align:center;
+		background: purple;
+		color:white;
+		margin-bottom:4px;
+		border-radius: 20px;
+		padding: 6px 0px;
+}
+
+nav a:hover {
+	background:yellow;
+}
+
+p{
+	background:black;
+	color:white;
+	text-align:center;
+	padding: 8px 5px;
+	border-radius: 10px;
+}
+
+p:hover{
+	background:blue;
+	color:black;
+}
+
+footer {
+	border-radius:5px;
+}
+
+figure {
+	margin:0px;
+}
+
+img {
+	width:100%;
+}
+
+
+/* Class for making YouTube/Vimeo videos responsive */
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for portrait tablets and large phone screens.  */
+@media all and (min-width: 600px) {
+	
+#layout {
+	display:flex;
+}	
+
+nav {
+	flex: 2;
+}
+
+main {
+	flex: 3;
+}
+	
+	
+} /* closes 600px+ */
+
+
+
+/* Minimum width for landscape laptops. */
+@media all and (min-width: 768px) {
+	
+
+	
+	
+} /* closes 768px+ */
+
+
+
+/* Minimum width for larger tablets, laptops and desktops. */
+@media all and (min-width: 992px) {
+	
+	.center {
+		width:60%;
+		height:60%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	
+} /* closes 992px+ */
+
+
+
+/* Minimum width for larger desktops. */
+@media all and (min-width: 1200px) {
+	
+	
+	
+	
+	
+} /* closes 1200px+ */
+
+
+

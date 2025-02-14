@@ -173,7 +173,7 @@ main {
 @media all and (min-width: 992px) {
 	
 	.center {
-		width:400px;
+		width:450px;
 		height:400px;
 		
 	}
@@ -187,7 +187,7 @@ main {
 @media all and (min-width: 1200px) {
 	
 	.center {
-		width:500px;
+		width:550px;
 		height:500px;
 		
 	}

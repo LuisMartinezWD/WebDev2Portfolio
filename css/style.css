@@ -155,7 +155,14 @@ main {
 /* Minimum width for landscape laptops. */
 @media all and (min-width: 768px) {
 	
-
+.center {
+		width:60%;
+		height:60%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
 	
 	
 } /* closes 768px+ */
@@ -166,11 +173,9 @@ main {
 @media all and (min-width: 992px) {
 	
 	.center {
-		width:60%;
-		height:60%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		width:45%;
+		height:45%;
+		
 	}
 	
 	
@@ -181,7 +186,11 @@ main {
 /* Minimum width for larger desktops. */
 @media all and (min-width: 1200px) {
 	
-	
+	.center {
+		width:40%;
+		height:40%;
+		
+	}
 	
 	
 	

@@ -1,0 +1,269 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+	margin-top:15px;
+ text-align:center;
+ margin:auto;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+	background:#EFE9D5;
+	
+	
+}
+
+header{
+	padding: 15px;
+	text-align:center;
+	font-family: Sigmar, consolas,serif,sans-serif;
+	color:#27445D;
+}
+header h2{
+	color:#4579a5;
+}
+
+
+.mobileL, .mobileD{
+	text-align:center;
+	border: 2px dashed #497D74;
+	padding:10px;
+}
+
+.info {
+	text-align:center;
+	border:3px dotted #497D74;
+	padding:5px;
+}
+
+.imgresize{
+	border: 2px dashed #497D74;
+	margin-bottom:15px;
+}
+
+.fooddesc{
+	border:2px dashed #497D74;
+	padding: 5px;
+	text-align:center;
+	margin:auto;
+}
+
+#container {
+	width:90%;
+	margin:auto;
+}
+
+
+
+figure {
+	margin:0px;
+	padding: 5px;
+}
+
+figure img {
+	width:100%;
+}
+
+nav section {
+	border:1px solid #71BBB2;
+	margin-bottom:15px;
+	
+}
+
+
+
+nav section p {
+	border:5px;
+	padding:10px 5px;
+	text-align:center;
+	font-family: Satisfy, consolas,serif,sans-serif;
+}
+
+.desktopM, .desktopP {
+display:none;
+}
+
+
+/* Class for making YouTube/Vimeo videos responsive */
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+	
+	
+	
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+
+	
+	#container {
+		width:80%;
+		
+	}
+	
+	nav {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+	}
+	
+	nav section {
+		flex:0 1 48%;
+	}
+		
+	
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	header {
+		
+	}
+	.imgresize{
+		width:45%;
+		height:45%;
+		max-width:600px;
+		max-height:600px;
+		border: 2px dashed #497D74;
+	 display: block; 
+    margin: 0 auto;
+	margin-bottom:15px;
+	}
+	
+	.fooddesc{
+		width:60%;
+		height:60%;
+		max-width:900px;
+		max-height:900px;
+	border:2px dashed #497D74;
+	padding: 5px;
+	text-align:center;
+	margin:auto;
+}
+	
+	.mobileL, .mobileD {
+		display:none;
+	
+	}
+	
+	
+	.desktopM, .desktopP{
+		
+	display:block;
+	border: 2px dashed #497D74;
+	padding:15px;
+	width:50%;
+	text-align:center;
+	margin:0 auto;
+	
+	}
+	
+	.desktopM{
+		margin-bottom:20px;
+	}
+	
+	
+	nav section{
+		flex:0 1 32%;
+	}
+	
+	
+	
+} /* closes 1024px+ */
+
+
+
+
+

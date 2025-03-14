@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Assignment 5</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+<div id="container">
+
+
+  <header>
+            <h1 id="Title">Very Professional Dog</h1>
+        </header>
+        <main>
+            <img id="IMG" src="img/dumahhdog.jpg" alt="Professional Look">
+            <p id="TEXT">Hello, it is me beady eyed black dog, I am so professional right now my friend. The way I stare into your soul is so 
+professional it is baffling. I cannot imagine myself being any more of a professional beady eyed black dog. If you think for even a second that I am not the most 
+professional beady eyed black dog you've ever seen... I must simply say you are incorrect.			</p>
+            <button id="SWAP">Why am I not Silly</button>
+        </main>
+  
+    
+ 
+
+
+<footer>
+<p>&#169; Luis Martinez</p>
+
+</footer>
+
+ <!-- Thank you Tyrone for helping me with a base template, I could not get mine to work for some reason-->
+
+
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+   <script>
+        $(document).ready(function() {
+            $("#SWAP").click(function() {
+                $("body").toggleClass("casual-theme");
+                if ($("body").hasClass("casual-theme")) {
+                    $("#Title").text("Very P̶r̶o̶f̶e̶s̶s̶i̶o̶n̶a̶l̶ Silly Dog");
+                    $("#TEXT").text("Hola, I am Beady eyed Roblox Dog, I am so silly right now my friend. The way I stare into space while sitting next to Roblox Bomberman is so Silly it is baffling. I cannot imagine myself being any more of a silly beady eyed roblox dog. If you think for even a second that I am not the most silly beady eyed roblox dog you've ever seen... you stupid ");
+                    $("body").addClass("fun-mode").removeClass("pro-mode");
+                    $("#IMG").attr("src", "img/robloxdog.png");
+					 $("#SWAP").text("Why am I not Professional");
+					  $("#SWAP").addClass("pro-button").removeClass("silly-button");
+                } else {
+                    $("#Title").text("Very Professional Dog");
+                    $("#TEXT").text("Hello, it is me beady eyed black dog, I am so professional right now my friend. The way I stare into your soul is so professional it is baffling. I cannot imagine myself being any more of a professional beady eyed black dog. If you think for even a second that I am not the most professional beady eyed black dog you've ever seen... I must simply say you are incorrect.");
+                    $("body").addClass("pro-mode").removeClass("fun-mode");
+                    $("#IMG").attr("src", "img/dumahhdog.jpg");
+					$("#SWAP").text("Why am I not Silly");
+					$("#SWAP").addClass("silly-button").removeClass("pro-button");
+                }
+            });
+        });
+   </script>
+   <!-- I had similar Jquerey in my broken template, I for some reason could not get it to work at all so once again thank you Tyrone for the help-->
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+  <script>
+$(document).ready(function() {
+
+
+
+
+}); //close .ready()
+</script>
+
+</body>
+	
+</html> 

@@ -1,0 +1,155 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('Brevis-Regular.woff2') format('woff2');
+	
+}
+@font-face {
+    
+	font-family: 'CustomFont2';
+    src: url('Slovic_Demo-Serif.woff2') format('woff2');
+}
+
+body {
+    font-family: CustomFont2, sans-serif;
+    background: Grey;
+    color: #333;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+	
+}
+
+#container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+	margin-top:15px;
+	border:2px dashed black;
+	border-radius:20%;
+}
+
+#TITLE {
+    font-size: 2em;
+}
+
+#IMG {
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.5s;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: crosshair;
+	border-radius:45%;
+	background:#9400FF;
+	color:#AED2FF;
+}
+
+.pro-button{
+	background:white;
+	color:grey;
+}
+
+.silly-button{
+	background:#9400FF;
+	color:#AED2FF;
+}
+.pro-mode {
+    background: Grey;
+    color: Black;
+    font-family: CustomFont2, sans-serif;
+}
+
+.fun-mode {
+    background:#27005D;
+    color: #E4F1FF;
+    font-family: 'CustomFont', sans-serif;
+}
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+	
+	
+	
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	
+	
+	#container {
+		width:80%;
+		
+	}
+	
+	nav {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+	}
+	
+	nav section {
+		flex:0 1 48%;
+	}
+		
+	
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	body {
+
+	}
+	
+	.mobile {
+		display:none;
+	}
+	
+	.desktop{
+		display:block;
+	}
+	
+	nav section{
+		flex:0 1 32%;
+	}
+	
+	
+} /* closes 1024px+ */
+
+
+
+
+

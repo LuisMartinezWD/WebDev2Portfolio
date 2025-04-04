@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<!-- This matches the CSS width to the device width, and prevents forced overview without disabling zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	<title>Reza Shah and Mohammad Reza Shah Pahlavi.</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+  <div id="container">
+
+
+<header>
+  <h1>Middle East History</h1>
+  </header>
+  
+  <div id="cat1"></div>
+  
+<section id="one">
+<p>The Pahlavi Dynasty in Iran is a great example of understanding the effects of both internal and external intervention on Middle Eastern systems and societies. Reza Shah Pahlavi, the founder of the Pahlavi Dynasty, came from a humble background in a time that was tainted with internal conflict and foreign interference.  With direct support from the British, Pahlavi staged a coup in 1921 that laid the foundation for a strong central government. This rise was brought forward by a desire to modernize a country that was already on the verge of its self collapse; his policies drastically transformed Iran's state structure. Reza Shah rebuilt all of Iran’s army, judicial system, the infrastructure regarding education, and the transportation network. He also worked to centralize power, diminished the influence of tribal and religious institutions( forcing Iran’s education system to follow one format), and promoted secular nationalism to forge an identity for Iran and its people that was unified as one. While his reforms had laid the groundwork for a more modern nation, they also heavily disturbed long standing social structures and completely alienated past key influences, such as tribal leaders and religious leaders.  </p>
+  </section>
+ 
+
+
+    <div id="cat2"><!--<p>***Brief message***</p>-->
+    <h1>Hola!</h1>
+    
+    </div>
+
+    <section id="two">
+  <p>Reza Shah’s modernization efforts were highly extensive but they also came with contradictions, for example he founded the University of Tehran, he enhanced the country’s postal and telecommunications infrastructure, and significantly expanded access to public education, going from about 30,000 to over 370,000 students during his reign. However, his approach to modernization was often authoritarian and very “Top down’ putting all the power in his hands and ensuring the people had nothing. So while he was doing good for the people, these changes came onto the public randomly and were to be followed because he ordered it. His refusal to build participatory political institutions, and silencing those with opposing opinions, or even eliminating allies when he perceived them as threats, contributed to a huge power vacuum. His reforms were often leaning towards secularism and westernization, this then worked towards creating a large divide between modernization and cultural preservation. Reza Shah did do good work on reducing foreign control over Iran’s economy, in particular its oil, but he still relied heavily on foreign assistance, which after World War 2 led to the fragility of his glorified monarchy being revealed.  </p>
+   </section>
+    
+      <div id="cat3"></div>
+
+ <section id="three">
+  <p>Mohammad Reza Shah Pahlavi was the man who inherited this fragile system, and unfortunately, his rule was defined by an even greater dependency on outside countries. After the 1953 CIA and MI6 orchestrated coup that removed Prime Minister Mohammad Mosaddeq the Shah regained power but it came at the cost of legitimacy in the eyes, due to the fact that Mossadeq was voted into power, and to be forcefully replaced did not fit the democracy. Mohammad Reza Shah’s White Revolution worked to further modernization, it offered land reforms, women’s suffrage, and economic development. But it failed to address the furthering social inequality and rising discontent and dissatisfaction. The use of Savak, which was the Shah’s secret police, suppressed any public resentment. In the end the Shah’s massive reliance on Western support and his alienation of any religious or traditional groups led to the 1979 Islamic Revolution. Led by Ayatollah Khomeini. The fall of the Pahlavi dynasty shows the limits of any “top down” ruling, especially with modernization and the intent to improve a nation, also the avoidance and ignoring political voices of your people, it doesn't lead to your nation thinking highly of you. The Pahlavi Dynasty at its core was nothing more of a glorified monarchy, not the great reform it wanted to be. </p>
+    </section>
+
+
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  
+  <!-- Container for your jQuery code -->
+  <script>
+$(document).ready(function() {
+
+$(window).scroll(function() {
+
+var windowPosition = $(window).scrollTop();
+
+if(windowPosition>400){
+$('#two').addClass('fade');
+}else{
+$('#two').removeClass('fade');
+}
+
+
+
+if(windowPosition>600){
+$('#one').addClass('slide');
+} else {
+$('#one').removeClass('slide');
+}
+
+if(windowPosition>1300){
+$('#three').addClass('scale');
+} else {
+$('#three').removeClass('scale');
+}
+
+
+});
+
+
+}); //close .ready()
+</script>
+
+</body>
+	
+</html> 

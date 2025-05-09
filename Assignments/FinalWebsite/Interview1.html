@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Ai's Sabotage To Our Schools</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+<div id="circleButton">+</div>
+<div id="menuLinks">
+  <a href="index.html" class="menu-item">Home</a>
+  <a href="Interview1.html" class="menu-item">Interview 1</a>
+  <a href="Research.html" class="menu-item">Research</a>
+  <a href="Interview2.html" class="menu-item">Interview 2</a>
+  <a href="Writing.html" class="menu-item">Writing</a>
+</div>
+
+
+
+<div id="container3">
+
+  <div class="vertical-title">INTERVIEW1</div>
+
+  <div class="angled-oval">
+    <img/>
+  </div>
+
+  <div class="highlight-box">
+    <p>Are you aware of the growing amount of students using Artificial Intelligence to not only  assist with school work but also to have it done for them 100%? Yes, i know that a lot of students either use AI to complete work because they don't have  time to complete their work or simply don't feel like doing their work. Have you ever used Artificial intelligence to help you with an assignment? Have you ever  used it to do an assignment in its entirety? I have used Artificial intelligence to help me with finding basic answers to questions that I  have but often do more research on those questions. I have never used AI to complete an  entire assignment, only to give me ideas of what to do. Are you aware that there are instructors who are using artificial intelligence to create  lesson plans for their students? I was not aware of this, I knew that often teachers would use others lesson plans,  handouts, or assignments or even reuse their own lessons from past years, but I was not  aware that they used AI. Regardless of whether or not you have used it or not, do you think that Artificial intelligence  should be present in the classroom? Do you thin that instructors and students will ever use  it in a good way? Or will it just be an easy way to get work done fast? I believe that AI should definitely be limited in classrooms, however there are times where  it is okay to use it. There have been times where certain teachers would recommend using  a certain AI assistant, Perplexity, to help us start brainstorming ideas for research projects.  I do believe that AI can be used in good ways, like my example, it can help students get  started on work, acting like a guide rather than doing the work for them. There will most  likely still be students who are going to use AI to get their work done fast and easy. In your opinion, does using AI help students actually learn better, or does it make people  more dependent and less engaged? I believe that AI, if it is used to simply get a starting point then it will allow students to learn  better, now having a better understanding of what they are doing, but students who use AI to complete the entire assignment will become more dependent and less engaged  because they aren't putting in any effort to “their” work. Has there been any class discussion or reaction from teachers about students using AI  tools like ChatGPT or other apps? There have been a few times that teachers have mentioned their disappointment in the use  of AI in their classroom. They would make announcements talking about how it's easy for  them to tell when a student does their work of if they used AI, for presentations they  warned students that they are not going to know what they are talking about, and that it  would lower their grade further for the use of AI and bad presentation. Do you think it’s fair if some students use AI to finish assignments while others don’t? I do not believe that it is fair as students have put in their time and effort into completing  their assignments while other students are using AI and getting the same or better grades  for less or no effort at all. If your school banned AI tools completely, would you support that or push back? Why? I don't normally use AI except for when I need ideas or a starting point, so I would support  the ban as it is also unfair to me and other students are getting the same grades as us  when they didn't put in any effort. What kind of assignments do you think AI should or shouldn’t be used for? I think it's okay for AI to be used a little bit when doing research because it summarizes  topics and gives its sources so you can do further research. However, the information from  AI should not be copied but used as a starting point. AI should not be used to complete any  type of assignment since th4e point is to learn and grow and using Ai to do their work will  not help students at all. Do you think AI can be helpful for students who are struggling, like with learning disabilities  or language barriers? I think it's okay for these students to use AI as long as they don't use it to do their work but  only to help them in the ways they need as it is important that students get the  accommodations they need. Would you feel proud of turning in something AI wrote, or would you feel like it wasn’t really  yours? I would feel like the work is not really mine since all I would have done was ask AI to do my  work, and honestly, I would feel ashamed of myself for not trying to do the work. If your teacher used AI to grade your work, how would you feel about that? Would it feel more objective or impersonal? I think it depends on the assignment, if it's something like a multiple-choice test, maybe  even with two or three short answer questions it would be okay to use AI. However, if it's a  big assignment that took a lot of time or effort or just something where answers would be  very different based on the students then the teacher should grade it themselves. What would you think if one day your entire class was taught by an AI or chatbot instead of  a teacher? I wouldn't feel verry comfortable being taught by AI, although most if not all the information is correct, AI isn't very capable of connecting with every student to help them learn in ways  that are best for them. Do you think students in the future will need to learn how to use AI responsibly, like a new  skill? I think that in the future students will need to learn to use AI responsibly since over time  technology is evolving more and more, but I think they should also learn not to use it in  classrooms and when to use it for personal situations. Should schools start teaching AI literacy the way they teach writing or coding? I don't think that schools should teach students how to use or make AI since that will only  make it easier for them to use it to complete their assignments and potentially make it  easier to not get caught using it.</p>
+  </div>
+
+  <div class="quote-box">
+    <p>"I would feel like the work is not really mine since all I would have done was ask AI to do my work, and honestly, I would feel ashamed of myself for not trying to do the work."</p>
+  </div>
+
+  <button class="expand-btn">Expand</button>
+
+</div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+<script>
+  $(document).ready(function () {
+    let menuOpen = false;
+
+    $("#circleButton").click(function () {
+      menuOpen = !menuOpen;
+
+      if (menuOpen) {
+        $("#circleButton").text("×");
+        $(".menu-item").each(function (index) {
+          $(this).css({
+            top: `${(index + 2) * 75}px`,
+            opacity: 1,
+            pointerEvents: "auto"
+          });
+        });
+      } else {
+        $("#circleButton").text("+");
+        $(".menu-item").each(function () {
+          $(this).css({
+            top: `20px`,
+            opacity: 0,
+            pointerEvents: "none"
+          });
+        });
+      }
+    });
+  });
+  
+  <!--TO MAKE THE BUTTON SHOOT HORIZONTALLY, CHANGE THE TOP TO LEFT-->
+</script>
+
+
+
+  
+  
+
+
+</body>
+	
+</html> 

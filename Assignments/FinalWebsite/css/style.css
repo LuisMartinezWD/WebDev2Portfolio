@@ -1,0 +1,437 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('Brevis-Regular.woff2') format('woff2');
+	
+}
+@font-face {
+    
+	font-family: 'CustomFont2';
+    src: url('Slovic_Demo-Serif.woff2') format('woff2');
+}
+
+body {
+    font-family: CustomFont2, sans-serif;
+    background: Grey;
+    color: #333;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+	
+}
+
+#container {
+    max-width: 2000px;
+    margin: auto;
+    padding: 20px;
+	margin-top:15px;
+	border:2px dashed black;
+	border-radius:20%;
+}
+
+/*css for home page*/
+
+.oval-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.oval {
+  width: 90%;
+  max-width: 500px;
+  background-color: #d3d3d3;
+  border-radius: 60% / 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-family: CustomFont;
+  font-size: 14px;
+  color: #333;
+  min-height: 200px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  border-top: 5px solid #5e6b63;
+  border-right: 8px solid #5e6b63;
+  border-bottom: 6px solid #5e6b63;
+  border-left: 0px solid transparent;
+  margin-bottom: 20px;
+}
+
+
+.left {
+  transform: rotate(-10deg);
+font-size:8px;
+min-height: 520px;
+
+}
+
+.center {
+  border-radius: 50%; 
+}
+
+.right {
+  transform: rotate(10deg);
+  font-size:8px;
+min-height: 520px;
+}
+
+#circleButton {
+  width: 100px;
+  height: 100px;
+  background-color: #5e6b63;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+#menuLinks {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+.menu-item {
+  display: block;
+  background-color: lightgray;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  font-family: CustomFont;
+  margin-top: 10px;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  transition: all 0.4s ease;
+  pointer-events: none; /
+}
+
+
+
+/*Css for Research page*/
+
+#container2 {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+	margin-top:15px;
+}
+.research-title {
+  font-size: 3em;
+  font-family: CustomFont, serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 15px;
+  position: relative;
+}
+
+.research-title span {
+  position: relative;
+}
+
+
+.tall-box {
+  width: 300px;
+  min-height: 350px;
+  background-color: #d3d3d3;
+  border-radius: 25px;
+  border-top: 4px solid #5e6b63;
+  border-left: 6px solid #5e6b63;
+  border-bottom: 6px solid #5e6b63;
+  border-right: 0px solid transparent;
+  padding: 20px;
+  font-family: CustomFont;
+  position: absolute;
+}
+
+.left-box {
+  bottom: 80px;
+  left: 5%;
+}
+
+.right-box {
+  top: 80px;
+  right: 5%;
+}
+
+
+.oval-image {
+  width: 250px;
+  height: 125px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 300px auto;
+  transform: rotate(20deg);
+  border: 3px solid #5e6b63;
+  
+}
+
+.oval-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(-30deg); 
+}
+
+
+/*css for interviews*/ 
+#container3 {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+}
+
+.vertical-title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 40px;
+  top: 300px;
+  font-size: 3.5em; 
+  font-family: CustomFont;
+}
+
+.angled-oval {
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: rotate(55deg);
+  margin: 150px auto 30px 100px;
+  border: 4px solid #5e6b63;
+}
+
+.angled-oval img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(-15deg);
+}
+
+.highlight-box {
+  background-color: #d3d3d3;
+  border-top: 6px solid #5e6b63;
+  border-left: 10px solid #5e6b63;
+  border-bottom: 6px solid #5e6b63;
+  border-right: none;
+  border-radius: 25px;
+  padding: 20px;
+  width: 60%;
+  margin-left: 100px;
+}
+
+.quote-box {
+  background-color: lightgray;
+  border-radius: 15px;
+  padding: 5px;
+  width: 300px;
+  transform: rotate(50deg);
+  position: absolute; 
+  top: 300px;
+  right:5px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.expand-btn {
+  position: absolute;
+  right: 60px; 
+  top: 600px; 
+  background-color: #5e6b63;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+
+.vertical-title-right {
+  writing-mode: vertical-lr;
+  position: absolute;
+  right:1px;
+  top: 300px;
+  font-size: 3.5em;
+  font-family: CustomFont;
+}
+
+.oval-image-right {
+  width: 200px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: 40px;
+  top: 140px;
+  transform: rotate(-15deg);
+  border: 3px solid #5e6b63;
+}
+
+.oval-image-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(15deg);
+}
+
+.main-box-right {
+  width: 60%;
+  min-height: 250px;
+  background-color: #d3d3d3;
+  border-radius: 25px;
+  border-top: 4px solid #5e6b63;
+  border-left: 6px solid #5e6b63;
+  border-bottom: 6px solid #5e6b63;
+  border-right: 0;
+  padding: 20px;
+  position: absolute;
+  right: 40px;
+  top: 260px;
+  font-family: CustomFont;
+}
+
+.quote-box-left {
+  background-color: lightgray;
+  border-radius: 15px;
+  padding: 15px;
+  width: 250px;
+  transform: rotate(-35deg);
+  position: absolute;
+  left: 20px;
+  top: 340px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.expand-btn-left {
+  position: absolute;
+  left: 80px;
+  top: 700px;
+  background-color: #5e6b63;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+
+
+/*my writing page css*/
+
+#writing-box {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  width: 300px;
+  background-color: #a3ada7;
+  border-radius: 35px;
+  padding: 20px;
+  font-family: CustomFont;
+  transition: transform 0.2s ease;
+}
+
+#swapBtn {
+  position: absolute;
+  top: 120px;
+  right: 60px;
+  transform: rotate(10deg);
+  background-color: #bfc6c6;
+  color: black;
+  font-family: CustomFont;
+  font-size: 14px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 10;
+}
+
+#pageTitle {
+    font-family: CustomFont;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 40px auto 20px auto;
+  max-width: 90%;
+  padding: 0 10px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+	
+	
+	
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	
+	
+	#container {
+		width:80%;
+		
+	}
+	
+	
+		
+	
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+
+	
+} /* closes 1024px+ */
+
+
+
+

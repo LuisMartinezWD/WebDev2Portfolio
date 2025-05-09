@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Ai's Sabotage To Our Schools</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+<div id="circleButton">+</div>
+<div id="menuLinks">
+  <a href="index.html" class="menu-item">Home</a>
+  <a href="Interview1.html" class="menu-item">Interview 1</a>
+  <a href="Research.html" class="menu-item">Research</a>
+  <a href="Interview2.html" class="menu-item">Interview 2</a>
+  <a href="Writing.html" class="menu-item">Writing</a>
+</div>
+
+
+
+<div id="container2">
+
+
+ 
+		
+        <main>
+           <div class="research-title">
+  <span style="top: -12px;">R</span>
+  <span style="top: 5px;">E</span>
+  <span style="top: -10px;">S</span>
+  <span style="top: 6px;">E</span>
+  <span style="top: -8px;">A</span>
+  <span style="top: 4px;">R</span>
+  <span style="top: -11px;">C</span>
+  <span style="top: 3px;">H</span>
+</div>
+
+<div class="tall-box left-box">
+  <p>AI in education also offers broader advantages beyond a single course. Tools powered by AI can personalize learning for each student, provide immediate feedback, and generate content that meets specific learning needs. This means that students who are struggling or have learning disabilities can receive tailored support, while teachers can spend less time on administrative tasks and more time interacting with students. The ability of AI to enhance creativity, boost inclusivity, and adapt to individual student progress makes it a powerful addition to modern education systems.</p>
+</p>
+</div>
+
+<div class="tall-box right-box">
+  <p>Despite its benefits, AI brings several risks into the classroom—one of the biggest being privacy and security. AI systems often require large amounts of data to function well, and this raises concerns about how student data is collected, stored, and protected. Additionally, AI doesn't always provide the most reliable information; its responses can be biased or drawn from poor sources, making it risky to depend on without critical oversight. If students begin to rely too heavily on AI for answers, there’s a chance they may stop thinking critically or questioning what they're learning.
+Another downside is the potential for reduced human interaction in learning environments. As AI tools take on more educational roles, students may miss out on developing communication and social skills that come from direct collaboration and teacher engagement. Plus, the cost and complexity of monitoring how students use AI adds another layer of difficulty for schools. There’s also the growing problem of academic dishonesty—AI makes it easier for students to cheat on assignments, and without strong controls, it can become difficult to ensure fair and honest learning.</p>
+</div>
+
+<div class="oval-image">
+  <img >
+</div>
+        </main>
+  
+    
+ 
+
+
+<footer>
+<p>&#169; Luis Martinez</p>
+
+</footer>
+
+
+
+
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+<script>
+  $(document).ready(function () {
+    let menuOpen = false;
+
+    $("#circleButton").click(function () {
+      menuOpen = !menuOpen;
+
+      if (menuOpen) {
+        $("#circleButton").text("×");
+        $(".menu-item").each(function (index) {
+          $(this).css({
+            top: `${(index + 2) * 75}px`,
+            opacity: 1,
+            pointerEvents: "auto"
+          });
+        });
+      } else {
+        $("#circleButton").text("+");
+        $(".menu-item").each(function () {
+          $(this).css({
+            top: `20px`,
+            opacity: 0,
+            pointerEvents: "none"
+          });
+        });
+      }
+    });
+  });
+  
+  <!--TO MAKE THE BUTTON SHOOT HORIZONTALLY, CHANGE THE TOP TO LEFT-->
+</script>
+
+
+
+  
+  
+
+
+</body>
+	
+</html> 

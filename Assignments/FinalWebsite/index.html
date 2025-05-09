@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Ai's Sabotage To Our Schools</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+<div id="circleButton">+</div>
+<div id="menuLinks">
+  <a href="index.html" class="menu-item">Home</a>
+  <a href="Interview1.html" class="menu-item">Interview 1</a>
+  <a href="Research.html" class="menu-item">Research</a>
+  <a href="Interview2.html" class="menu-item">Interview 2</a>
+  <a href="Writing.html" class="menu-item">Writing</a>
+</div>
+
+
+
+<div id="container">
+
+
+  <header>
+            <h1 id="Title">Artificially Intelligent</h1>
+			<h2 id="Title2">Academically Inept</h2>
+        </header>
+		
+        <main>
+           <div class="oval-container">
+  <div class="oval left">AI integration is rapidly transforming a wide range of industries by automating tasks, improving decision-making, and enhancing productivity. In healthcare, AI is being used to analyze medical data, assist in diagnostics, and even predict patient outcomes, helping doctors provide more accurate and timely care. In finance, algorithms are driving real-time fraud detection, customer service chatbots, and personalized investment strategies. The manufacturing sector benefits from AI through predictive maintenance, quality control, and robotics that streamline production lines. Similarly, in retail, companies are using AI to optimize supply chains, personalize shopping experiences, and manage inventory with greater efficiency.
+Other industries are also seeing major shifts. In transportation, AI powers self-driving vehicles, traffic prediction systems, and logistics optimization. The entertainment and media industry uses AI for content recommendation, automated editing, and even music or video generation. In education and human resources, AI helps personalize learning paths and streamline recruitment by analyzing candidate profiles. Overall, the integration of AI across sectors is not only improving efficiency and innovation but also reshaping the skills needed in the workforce.</div>
+  <div class="oval center">IMAGE WILL GO HERE</div>
+  <div class="oval right">AI is becoming increasingly common in schools, changing how students learn and how teachers teach. From personalized learning platforms that adapt to each student’s pace and learning style, to AI tutors that offer instant feedback, the technology is helping make education more flexible and accessible. Many schools are now using AI tools for grading assignments, managing classroom data, and even identifying students who may need extra support based on performance trends. These tools free up time for teachers to focus more on student engagement rather than administrative tasks.
+At the same time, AI is encouraging students to use technology in creative and practical ways. Courses like Tulane University’s “AI Unleashed” are teaching students how to use AI responsibly while solving real-world problems. Students are creating tools like photography assistants or healthcare-focused translators, showing that AI can be both educational and impactful. As AI continues to grow in schools, it’s becoming clear that it’s not just a passing trend—it’s becoming an essential part of the modern classroom.</div>
+</div>
+        </main>
+  
+    
+ 
+
+
+<footer>
+<p>&#169; Luis Martinez</p>
+
+</footer>
+
+
+
+
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+<script>
+  $(document).ready(function () {
+    let menuOpen = false;
+
+    $("#circleButton").click(function () {
+      menuOpen = !menuOpen;
+
+      if (menuOpen) {
+        $("#circleButton").text("×");
+        $(".menu-item").each(function (index) {
+          $(this).css({
+            left: `${(index + 2) * 75}px`,
+            opacity: 1,
+            pointerEvents: "auto"
+          });
+        });
+      } else {
+        $("#circleButton").text("+");
+        $(".menu-item").each(function () {
+          $(this).css({
+            left: `20px`,
+            opacity: 0,
+            pointerEvents: "none"
+          });
+        });
+      }
+    });
+  });
+  
+  <!--TO MAKE THE BUTTON SHOOT HORIZONTALLY, CHANGE THE TOP TO LEFT-->
+</script>
+
+
+
+  
+  
+
+
+</body>
+	
+</html> 

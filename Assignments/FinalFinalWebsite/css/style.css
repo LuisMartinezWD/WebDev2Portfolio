@@ -1,0 +1,1015 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+	
+	
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body{
+	background-color:blue;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('Tanker-Regular.woff2') format('woff2');
+	
+}
+@font-face {
+    
+	font-family: 'CustomFont2';
+    src: url('Plein-Regular.woff2') format('woff2');
+}
+
+body {
+    font-family: CustomFont2, Arial;
+    background: Grey;
+    color: #333;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+	
+}
+
+#circleButton{display:none;}
+#menuLinks{display:none;}
+#altMenu{display:none;}
+
+#altMenuToggle {
+    display: none;
+    background-color: #697773;
+    padding: 5px;
+    border-radius: 6px;
+    border: 2px solid #ADBAB1;
+    width: auto; 
+    display: flex; 
+    justify-content: center; 
+    gap: 5px; 
+}
+
+
+.menu-item2 {
+    display: inline-block; 
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    background-color: #CEDAD9;
+    border-radius: 4px;
+    border: 2px solid #9EB5B3;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    min-width: 80px; 
+}
+
+
+.menu-item2:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+body {
+        background-color: #FFF1CF; 
+    }
+
+#container {
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px;
+	
+}
+#Title{
+	font-family:CustomFont;
+}
+#Title2{
+	font-family:CustomFont2;
+}
+.oval-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px; 
+        padding: 10px; 
+    }
+
+    .oval {
+        width: 90%; 
+        max-width: 400px; 
+        font-size: 14px; 
+        padding: 10px; 
+        border-radius: 15px; 
+		
+    }
+
+    .oval.center {
+        width: 200px; 
+        height: 100px;
+    }
+
+    .oval.center img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .left, .right {
+        text-align: center;
+        font-size: 14px; 
+        padding: 10px;
+		font-family:CustomFont2;
+		background-color: #9EB5B3;
+    }
+
+/*interviews mobile*/
+
+#container3 {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+}
+
+.vertical-title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 40px;
+  top: 300px;
+  font-size: 3.5em; 
+  font-family: CustomFont;
+}
+
+.angled-oval {
+  width: 200px;
+  height: 150px;
+  top:-40px;
+  left:-115px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: rotate(55deg);
+  margin: 150px auto 30px 100px;
+  border: 4px solid #5e6b63;
+   overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+position:relative;
+}
+
+.angled-oval img {
+	position:absolute;
+  width: 200%;
+  height: 200%;
+  object-fit: fill;
+  transform: rotate(-90deg);
+}
+
+.highlight-box {
+  background-color: #CEDAD9;
+  border-top: 6px solid #5e6b63;
+  border-left: 10px solid #5e6b63;
+  border-bottom: 6px solid #5e6b63;
+  border-radius: 25px;
+  padding: 20px;
+  width: 60%;
+  margin-left: 100px;
+  font-family: CustomFont2;
+}
+
+.quote-box {
+  background-color: #CEDAD9;
+  border-radius: 15px;
+  padding: 5px;
+  width: 215px;
+  transform: rotate(50deg);
+  position: absolute; 
+  top: 110px; 
+  right:-5px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  font-family: CustomFont;
+  
+}
+
+#expand-btn {
+display:none;
+font-family: CustomFont;
+}
+
+#expand-btn2 {
+display:none;
+font-family: CustomFont2;
+}
+
+#expand-btn3{
+	display:block;
+	  position: absolute;
+  left:5px;
+ 
+  top: 700px; 
+  background-color: #5e6b63;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: .6em;
+  cursor: pointer;
+  font-family: CustomFont2;
+}
+#expand-btn4{
+	 position: absolute;
+  left:5px;
+ 
+  top: 700px; 
+  background-color: #5e6b63;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: CustomFont;
+}
+
+.vertical-title-right {
+  writing-mode: vertical-lr;
+  position: absolute;
+  right:10px;
+  top: 300px;
+  font-size: 2em;
+  font-family: CustomFont;
+}
+
+.oval-image-right {
+  width: 200px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: 5px;
+  top: 130px;
+  transform: rotate(-35deg);
+  border: 3px solid #5e6b63;
+}
+
+.oval-image-right img {
+  width: 120%;
+  height: 110%;
+  object-fit: cover;
+  transform: rotate(15deg);
+}
+
+.main-box-right {
+  width: 60%;
+  min-height: 250px;
+  background-color: #9EB5B3;
+  border-radius: 25px;
+  border-top: 4px solid #5e6b63;
+  border-left: 6px solid #5e6b63;
+  border-bottom: 6px solid #5e6b63;
+  border-right: 0;
+  padding: 20px;
+  position: absolute;
+  right: 40px;
+  top: 260px;
+  font-family: CustomFont;
+}
+
+.quote-box-left {
+  background-color: #9EB5B3;
+  border-radius: 15px;
+  padding: 15px;
+  width: 215px;
+  transform: rotate(-15deg);
+  position: absolute;
+  left: -5px;
+  top: 25px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  z-index: 2;
+  font-family:CustomFont2;
+}
+
+#expand-btn-left {
+display:none;
+}
+
+/*research mobile*/
+#container2 {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+   #research {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        row-gap: 30px; 
+    }
+
+    .research-title {
+        font-size: 1.5em; 
+        padding-top: 8px;
+        text-align: center;
+		font-family:CustomFont;
+    }
+
+    .tall-box {
+        width: 90%; 
+        max-width: 400px; 
+        font-size: 14px; 
+        padding: 12px; 
+		background-color: #d3d3d3;
+    border-radius: 25px;
+	
+    }
+
+    .oval-image {
+        width: 200px; 
+        height: 100px;
+    }
+
+    .oval-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+	
+.left-box{background-color: #9EB5B3;
+}
+
+.right-box{background-color: #697773;}
+    .left-box, .right-box {
+        width: 90%;
+        max-width: 400px;
+        text-align: center; 
+        font-size: 14px;
+		font-family:CustomFont;
+		
+    }
+
+	
+	/*writing mobile*/
+	#writing-box {
+  position: absolute;
+  top: 200px;
+  left: 5px;
+  width: 220px;
+  background-color: #ADBAB1;
+  border-radius: 35px;
+  padding: 10px;
+  font-family: CustomFont;
+  transition: transform 0.2s ease;
+}
+
+#swapBtn {
+  position: absolute;
+  top: 150px;
+  right: 60px;
+  transform: rotate(10deg);
+  background-color: #ADBAB1;
+  color: black;
+  font-family: CustomFont;
+  font-size: 14px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 10;
+}
+
+#pageTitle {
+    font-family: CustomFont;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 40px auto 20px auto;
+  max-width: 90%;
+  padding: 0 10px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+	
+ #altMenuToggle { font-size: 15px; padding: 9px 14px; }
+    .menu-item2 { font-size: 15px; padding: 7px; }
+
+	
+.oval-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px; 
+    }
+
+    .oval {
+        width: 80%; 
+        max-width: 500px; 
+		background-color: #d3d3d3;
+		border-radius:10px;
+		padding:5px;
+    }
+
+    .oval.center {
+        width: 250px; 
+        height: 125px;
+		background-color: #ADBAB1;
+    }
+
+    .oval.center img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .left, .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+		background-color: #9EB5B3;
+    }
+
+
+/*interviews tablets*/
+	
+
+.angled-oval {
+  width: 200px;
+  height: 150px;
+  top:-40px;
+  left:-115px;
+  
+}
+
+
+
+
+
+.quote-box {
+  width: 215px;
+  top: 130px; 
+  right:30px;
+}
+
+
+
+
+
+.oval-image-right {
+  width: 200px;
+  height: 100px; 
+  right: 5px;
+  top: 130px;
+}
+
+
+
+
+
+.quote-box-left {
+  width: 215px;
+  left: 20px;
+  top: 40px;
+}
+
+
+
+
+/*research tablet*/
+#container2 {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+#research {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto auto; 
+    grid-template-areas:
+      "title title"
+      "oval oval"
+      "left right";
+    row-gap: 50px; 
+	column-gap:50px;
+  }
+  
+  .research-title {
+	  padding-top:12px;
+    grid-area: title;
+    text-align: center;
+    font-size: 3em;
+    margin: 0 auto;
+  }
+
+.research-title span {
+  position: relative;
+}
+
+
+.tall-box {
+    background-color: #d3d3d3;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: CustomFont;
+    
+  }
+
+ .left-box {
+    grid-area: left;
+    margin-top: 60px;  
+	align-self:center;
+	min-height: 0;
+	background-color: #9EB5B3;
+  }
+
+.right-box {
+    grid-area: right;
+    margin-top: 0;  
+	background-color: #697773;
+  }
+
+ .oval-image {
+    grid-area: oval;
+    justify-self: center;
+    width: 250px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #5e6b63;
+  }
+
+.oval-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+   
+}
+	
+	
+	
+		/*my writing page tablets css #a3ada7*/
+
+#writing-box {
+  position: absolute;
+  top: 200px;
+  left: 5px;
+  width: 260px;
+  background-color: #ADBAB1;
+  border-radius: 35px;
+  padding: 10px;
+  font-family: CustomFont;
+  transition: transform 0.2s ease;
+}
+
+#swapBtn {
+  position: absolute;
+  top: 150px;
+  right: 60px;
+  transform: rotate(10deg);
+  background-color: #ADBAB1;
+  color: black;
+  font-family: CustomFont;
+  font-size: 14px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 10;
+}
+
+#pageTitle {
+    font-family: CustomFont;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 40px auto 20px auto;
+  max-width: 90%;
+  padding: 0 10px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	    #altMenuToggle { font-size: 16px; padding: 10px 15px; }
+    .menu-item2 { font-size: 16px; padding: 8px; }
+
+	
+	
+	
+	
+	/*code for laptop home page*/
+	.oval-container {
+        display: flex;
+		flex-direction:row;
+        flex-wrap: nowrap; 
+        justify-content: space-between; 
+        gap: 20px;
+    }
+
+    .oval {
+        width: 60%;
+        padding: 20px;
+        font-size: 16px;
+        box-sizing: border-box; 
+        overflow-wrap: break-word; 
+        word-break: break-word;
+		background-color: #d3d3d3;
+		border-radius:80px;
+    }
+
+    .oval.center {
+    border-radius: 50%;
+    flex: 0 0 auto;
+    width: 250px; 
+    height: 125px; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    }
+
+    .oval.center img {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .left, .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+		background-color: #9EB5B3;
+    }
+
+
+	/*interviews laptop*/
+	#container3 {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+}
+
+.vertical-title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 40px;
+  top: 300px;
+  font-size: 3.5em; 
+  font-family: CustomFont;
+}
+
+.angled-oval {
+  width: 200px;
+  height: 150px;
+
+}
+
+
+
+
+
+.quote-box {
+  
+  width: 300px;
+  transform: rotate(50deg);
+  position: absolute; 
+  top: 210px; 
+  right:5px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+#expand-btn {
+	display:block;
+  position: absolute;
+  right: 5px; 
+  top: 600px; 
+  background-color: #5e6b63;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#expand-btn2 {
+	display:block;
+  position: absolute;
+  right: 200px; 
+  top: 80px; 
+  background-color: #5e6b63;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+
+.vertical-title-right {
+  writing-mode: vertical-lr;
+  position: absolute;
+  right:10px;
+  top: 300px;
+  font-size: 2em;
+  font-family: CustomFont;
+}
+
+.oval-image-right {
+  width: 200px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: 40px;
+  top: 140px;
+  transform: rotate(-15deg);
+  border: 3px solid #5e6b63;
+}
+
+.oval-image-right img {
+  width: 120%;
+  height: 110%;
+  object-fit: cover;
+  transform: rotate(15deg);
+}
+
+.main-box-right {
+  width: 60%;
+  min-height: 250px;
+  background-color: #9EB5B3;
+  border-radius: 25px;
+  border-top: 4px solid #5e6b63;
+  border-left: 6px solid #5e6b63;
+  border-bottom: 6px solid #5e6b63;
+  border-right: 0;
+  padding: 20px;
+  position: absolute;
+  right: 40px;
+  top: 260px;
+  font-family: CustomFont;
+}
+
+.quote-box-left {
+  background-color: #9EB5B3;
+  border-radius: 15px;
+  padding: 15px;
+  width: 250px;
+  transform: rotate(-35deg);
+  position: absolute;
+  left: 40px;
+  top: 150px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+#expand-btn-left {
+	display:block;
+  position: absolute;
+  left: 80px;
+  top: 700px;
+  background-color: #5e6b63;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1em;
+  cursor: pointer;
+}
+#expand-btn3{
+	display:none;
+}
+#expand-btn4{
+	display:none;
+}
+
+	/*Css for laptop Research page*/
+
+
+
+#research {
+
+	column-gap:200px;
+  }
+  
+  
+	
+	/*my writing page laptop css #a3ada7*/
+
+#writing-box {
+
+  top: 200px;
+  left: 10px;
+  width: 400px;
+ 
+}
+
+#swapBtn {
+
+  top: 120px;
+  
+}
+
+
+
+	
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+/*css for home page*/
+#circleButton{display:block;}
+#menuLinks{display:block;}
+#altMenuToggle{display:none;}
+.menu-item2{display:none;}
+
+.oval-container {
+    display: flex;
+    flex-wrap: nowrap;         
+    justify-content: space-between;  
+    align-items: center;
+    margin-top: 50px;
+    column-gap: 20px;
+  }
+  
+.oval {
+    flex: 1 1 auto;
+    max-width: 450px; 
+	
+    background-color: #d3d3d3;
+    padding: 20px;
+    border-radius: 25% / 25%;
+    text-align: center;
+    
+    margin: 0;
+	
+  }
+
+
+.left {
+  transform: rotate(7deg);
+font-size:.78em;
+overflow-wrap:break-word;
+	word-break:break-word;
+ min-height: 600px;
+ max-height:600px; 
+ background-color: #9EB5B3;
+}
+
+.center {
+  border-radius: 50%; 
+  flex: 0 0 auto;
+  width: 250px;      
+  height: 125px; 
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+position:relative;
+
+}
+
+
+.oval.center img {
+	position:absolute;
+  width: 100%; 
+  height: 100%; 
+  object-fit: fill; 
+}
+
+
+
+.right {
+  transform: rotate(-7deg);
+  font-size:.8em;
+overflow-wrap:break-word;
+	word-break:break-word;
+	min-height: 600px;
+	 max-height:600px;
+	 background-color: #9EB5B3;
+}
+
+#circleButton {
+  width: 100px;
+  height: 100px;
+  background-color: #5e6b63;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+#menuLinks {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+.menu-item {
+  display: block;
+  background-color:#9EB5B3;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  font-family: CustomFont2;
+  margin-top: 10px;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  transition: all 0.4s ease;
+  pointer-events: none; 
+}
+
+
+
+
+
+/*css for interviews*/ 
+
+.quote-box {
+
+  top: 300px;
+  right:5px;
+ 
+}
+
+
+.quote-box-left {
+ 
+  left: 20px;
+  top: 340px;
+ 
+}
+
+.vertical-title-right {
+
+  right:1px;
+  top: 450px;
+  font-size: 3.5em;
+
+}
+
+
+/*my writing page css #a3ada7*/
+
+#writing-box {
+
+  left: 50px;
+  width: 500px;
+
+}
+
+
+	
+} /* closes 1024px+ */
+
+
+
+
